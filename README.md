@@ -26,6 +26,11 @@ output_ids = model.generate(ids, steps=1)
 print(tokenizer.decode(output_ids))
 ```
 
+`Starcoder2Tokenizer` implements a tiny byte pair encoding (BPE) tokenizer.
+It loads its vocabulary from `starcoder2/resources/vocab.json` along with the
+merge rules in `merges.txt`. Custom paths for these files can be provided via
+the tokenizer constructor if desired.
+
 The weights file `starcoder2.npy` is expected to be a serialized Python
 dictionary containing arrays or lists. If `numpy` is available it will be
 used, otherwise a pure Python pickle loader is employed. This example
