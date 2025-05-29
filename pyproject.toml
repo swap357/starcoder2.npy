@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "starcoder2-purepy"
+version = "0.1.0"
+description = "Pure Python implementation of Starcoder2"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{name="Example"}]
+license = {text="MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+numpy = ["numpy>=1.20"]
+
+[project.urls]
+Homepage = "https://example.com"
